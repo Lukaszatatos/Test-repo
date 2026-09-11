@@ -1,2 +1,3 @@
 # Test-repo
-testowanie funkcjonalności Github i korzystanie z materiałów szkolenieowych
+2
+Moja pierwsza zmiana wykonana podczas nauki Git.
