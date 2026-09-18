@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Team Capacity Calculator";
+}
+
+<h1>Team Capacity Calculator</h1>
+
+<form method="post">
+    <div>
+        <label>Liczba pracowników:</label>
+        <input type="number" asp-for="EmployeeCount" />
+    </div>
+
+    <div>
+        <label>Dni robocze:</label>
+        <input type="number" asp-for="WorkingDays" />
+    </div>
+
+    <div>
+        <label>Dostępność (%):</label>
+        <input type="number" asp-for="Availability" />
+    </div>
+
+    <button type="submit">Oblicz</button>
+</form>
+
+<hr />
+
+<h2>Wynik</h2>
+
+@if (Model.CapacityHours > 0)
+{
+    <p><strong>Capacity:</strong> @Model.CapacityHours godzin</p>
+}
