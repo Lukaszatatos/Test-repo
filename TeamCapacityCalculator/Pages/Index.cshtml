@@ -18,6 +18,13 @@
         padding: 20px;
         border-radius: 10px;
     }
+
+    .kpi-card {
+        padding: 15px;
+        border-radius: 8px;
+        width: 220px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
 </style>
 
 <h1>Team Capacity Calculator</h1>
@@ -49,12 +56,12 @@
 </form>
 </div>
 <hr />
-<div style="display:flex; gap:20px; flex-wrap:wrap; align-items:flex-start;">
-    <h2>Wynik</h2>
+<h2>Wynik</h2>
 
-    @if (Model.CapacityHours > 0)
-    {
-        <div style="background:white;padding:15px;border-radius:8px;width:220px;">
+@if (Model.CapacityHours > 0)
+{
+    <div style="display:flex; gap:20px; flex-wrap:wrap; align-items:flex-start;">
+        <div class="kpi-card" style="background:#dbeafe;">
             <h3>CapacityHours</h3>
             @if (Model.CapacityHours < 500)
             {
@@ -66,29 +73,29 @@
             }
         </div>
 
-        <div style="background:white;padding:15px;border-radius:8px;width:220px;">
+        <div class="kpi-card" style="background:#dbeafe;">
             <h3>Dostępne FTE</h3>
             <p>@Model.AvailableFTE</p>
         </div>
 
-        <div style="background:white;padding:15px;border-radius:8px;width:220px;">
+        <div class="kpi-card" style="background:#ede9fe;">
             <h3>Monthly Capacity</h3>
             <p>@Model.MonthlyCapacity godzin</p>
         </div>
 
-        <div style="background:white;padding:15px;border-radius:8px;width:220px;">
+        <div class="kpi-card" style="background:#dcfce7;">
             <h3>Annual Capacity</h3>
             <p>@Model.AnnualCapacity godzin</p>
         </div>
 
-        <div style="background:white;padding:15px;border-radius:8px;width:220px;">
+        <div class="kpi-card" style="background:#fed7aa;">
             <h3>Estimated Cost</h3>
             <p>Szacowany koszt: @Model.TotalCost PLN</p>
         </div>
 
-        <div style="background:white;padding:15px;border-radius:8px;width:220px;">
+        <div class="kpi-card" style="background:@(Model.Status.Contains("🔴") ? "#fecaca" : Model.Status.Contains("🟡") ? "#fef3c7" : "#dcfce7");">
             <h3>Status</h3>
             <p><strong>Status:</strong> @Model.Status</p>
         </div>
-    }
-</div>
+    </div>
+}
