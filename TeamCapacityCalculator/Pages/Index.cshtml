@@ -37,7 +37,7 @@
 
     <div>
         <label>Dostępność (%):</label>
-        <input type="number" asp-for="Availability" />
+        <input type="number" asp-for="Availability" min="0" max="100" />
     </div>
 
     <div>
@@ -49,24 +49,46 @@
 </form>
 </div>
 <hr />
+<div style="display:flex; gap:20px; flex-wrap:wrap; align-items:flex-start;">
+    <h2>Wynik</h2>
 
-<h2>Wynik</h2>
+    @if (Model.CapacityHours > 0)
+    {
+        <div style="background:white;padding:15px;border-radius:8px;width:220px;">
+            <h3>CapacityHours</h3>
+            @if (Model.CapacityHours < 500)
+            {
+                <p style="color:red;">Capacity: @Model.CapacityHours godzin</p>
+            }
+            else
+            {
+                <p style="color:green;">Capacity: @Model.CapacityHours godzin</p>
+            }
+        </div>
 
-@if (Model.CapacityHours > 0)
-{
-@if (Model.CapacityHours < 500)
-{
-    <p style="color:red;">
-        Capacity: @Model.CapacityHours godzin
-    </p>
-}
-else
-{
-    <p style="color:green;">
-        Capacity: @Model.CapacityHours godzin
-    </p>
-}
-    <p>Dostępne FTE: @Model.AvailableFTE</p>
-    <p>Szacowany koszt: @Model.TotalCost PLN</p>
-    <p><strong>Status:</strong> @Model.Status</p>
-}
+        <div style="background:white;padding:15px;border-radius:8px;width:220px;">
+            <h3>Dostępne FTE</h3>
+            <p>@Model.AvailableFTE</p>
+        </div>
+
+        <div style="background:white;padding:15px;border-radius:8px;width:220px;">
+            <h3>Monthly Capacity</h3>
+            <p>@Model.MonthlyCapacity godzin</p>
+        </div>
+
+        <div style="background:white;padding:15px;border-radius:8px;width:220px;">
+            <h3>Annual Capacity</h3>
+            <p>@Model.AnnualCapacity godzin</p>
+        </div>
+
+        <div style="background:white;padding:15px;border-radius:8px;width:220px;">
+            <h3>Estimated Cost</h3>
+            <p>Szacowany koszt: @Model.TotalCost PLN</p>
+        </div>
+
+        <div style="background:white;padding:15px;border-radius:8px;width:220px;">
+            <h3>Status</h3>
+            <p><strong>Status:</strong> @Model.Status</p>
+        </div>
+    }
+</div>
