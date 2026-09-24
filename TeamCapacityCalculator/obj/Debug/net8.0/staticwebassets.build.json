@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/W1MHXIDJwne7od3P/VBLr7+CxLByATcF0JYgoS1MEY=",
+  "Hash": "CX23cFjz76VOxlv5wVCnNvMemJJW3gboe4f2/Vyu9GE=",
   "Source": "TeamCapacityCalculator",
   "BasePath": "_content/TeamCapacityCalculator",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\A560760\\GitHub\\Test-repo\\TeamCapacityCalculator\\wwwroot\\images\\background.jpg",
+      "SourceId": "TeamCapacityCalculator",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\A560760\\GitHub\\Test-repo\\TeamCapacityCalculator\\wwwroot\\",
+      "BasePath": "_content/TeamCapacityCalculator",
+      "RelativePath": "images/background.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\background.jpg"
     },
     {
       "Identity": "C:\\Users\\A560760\\GitHub\\Test-repo\\TeamCapacityCalculator\\wwwroot\\js\\site.js",

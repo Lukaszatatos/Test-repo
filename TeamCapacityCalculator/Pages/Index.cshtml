@@ -4,8 +4,25 @@
 @{
     ViewData["Title"] = "Team Capacity Calculator";
 }
+<style>
+    body {
+        background-image: url('/images/background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .calculator-container {
+        background-color: rgba(255,255,255,0.9);
+        padding: 20px;
+        border-radius: 10px;
+    }
+</style>
 
 <h1>Team Capacity Calculator</h1>
+
+<div class="card p-4 mt-3">
 
 <form method="post">
     <div>
@@ -23,14 +40,33 @@
         <input type="number" asp-for="Availability" />
     </div>
 
+    <div>
+        <label>Koszt 1 FTE (PLN):</label>
+        <input type="number" asp-for="CostPerFte" />
+    </div>
+
     <button type="submit">Oblicz</button>
 </form>
-
+</div>
 <hr />
 
 <h2>Wynik</h2>
 
 @if (Model.CapacityHours > 0)
 {
-    <p><strong>Capacity:</strong> @Model.CapacityHours godzin</p>
+@if (Model.CapacityHours < 500)
+{
+    <p style="color:red;">
+        Capacity: @Model.CapacityHours godzin
+    </p>
+}
+else
+{
+    <p style="color:green;">
+        Capacity: @Model.CapacityHours godzin
+    </p>
+}
+    <p>Dostępne FTE: @Model.AvailableFTE</p>
+    <p>Szacowany koszt: @Model.TotalCost PLN</p>
+    <p><strong>Status:</strong> @Model.Status</p>
 }

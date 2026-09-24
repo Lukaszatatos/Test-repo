@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\A560760\\GitHub\\Test-repo\\TeamCapacityCalculator\\wwwroot\\images\\background.jpg",
+      "PackagePath": "staticwebassets\\images\\background.jpg"
+    },
+    {
       "Id": "C:\\Users\\A560760\\GitHub\\Test-repo\\TeamCapacityCalculator\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

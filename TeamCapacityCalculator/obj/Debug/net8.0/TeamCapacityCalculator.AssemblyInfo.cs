@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeamCapacityCalculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01b7994d0105beb0c52289f6da3edcb8f365884d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e52668ca3aa98a30e090b2f62530b5606baa8ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeamCapacityCalculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeamCapacityCalculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
