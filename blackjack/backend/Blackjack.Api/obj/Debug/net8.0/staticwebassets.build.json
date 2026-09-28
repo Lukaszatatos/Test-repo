@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Q7IHtpdnBQQhFf2awGT8qNEFozoHErmYQHEljNE92rM=",
+  "Source": "Blackjack.Api",
+  "BasePath": "_content/Blackjack.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

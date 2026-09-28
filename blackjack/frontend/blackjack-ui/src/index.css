@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@keyframes reel-scroll {
+from {
+transform: translateY(0);
+}
+ 
+to {
+transform: translateY(-50%);
+}
+}
+ 
+.reel-strip {
+display: flex;
+flex-direction: column;
+animation: reel-scroll 0.4s linear infinite;
+}
