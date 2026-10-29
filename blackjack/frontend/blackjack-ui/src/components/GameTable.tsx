@@ -3,11 +3,11 @@ import { Reel } from "./Reel";
 import { Paytable } from "./Paytable";
 
 const availableSymbols = [
-"/images/cat.png",
-"/images/dog.png",
-"/images/paw.png",
-"/images/bone.png",
-"/images/fish.png",
+`${import.meta.env.BASE_URL}images/cat.png`,
+`${import.meta.env.BASE_URL}images/dog.png`,
+`${import.meta.env.BASE_URL}images/paw.png`,
+`${import.meta.env.BASE_URL}images/bone.png`,
+`${import.meta.env.BASE_URL}images/fish.png`,
 ];
 
 function calculatePayout(symbols: string[]) {
@@ -27,13 +27,7 @@ function calculatePayout(symbols: string[]) {
 }
 
 export function GameTable() {
-  const initialSymbols = [
-"/images/cat.png",
-"/images/dog.png",
-"/images/paw.png",
-"/images/bone.png",
-"/images/fish.png",
-];
+  const initialSymbols = availableSymbols;
 
   const [symbols, setSymbols] = useState(initialSymbols);
   const [revealedSymbols, setRevealedSymbols] = useState(initialSymbols);

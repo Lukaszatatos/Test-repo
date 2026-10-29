@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Blackjack.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+750833e5a0ac94c0a3e32f5c15a7c4b36b795b18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ed6ecb8e5e0623f7cb050855a99132da7af7fa9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Blackjack.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Blackjack.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

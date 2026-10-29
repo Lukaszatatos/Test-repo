@@ -1,9 +1,9 @@
 const availableSymbols = [
-  "/images/cat.png",
-  "/images/dog.png",
-  "/images/paw.png",
-  "/images/bone.png",
-  "/images/fish.png",
+  "images/cat.png",
+  "images/dog.png",
+  "images/paw.png",
+  "images/bone.png",
+  "images/fish.png",
 ];
 
 const spinningSymbols = [
@@ -28,7 +28,7 @@ export function Reel({ symbol, isSpinning }: ReelProps) {
               className="flex h-48 w-48 items-center justify-center p-2"
             >
               <img
-                src={currentSymbol}
+                src={`${import.meta.env.BASE_URL}${currentSymbol}`}
                 alt="symbol"
                 className="h-full w-full object-contain"
               />
