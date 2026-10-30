@@ -45,7 +45,7 @@ export function GameTable() {
 
   const spin = () => {
     if (isSpinning || credits <= 0) return;
-    const spinSound = new Audio("/sounds/spin.mp3");
+    const spinSound = new Audio(`${import.meta.env.BASE_URL}sounds/spin.mp3`);
     spinSound.play();
 
     setIsSpinning(true);
@@ -89,8 +89,8 @@ setCredits((current) => current + payout);
  
 const sound =
 payout === 100
-? new Audio("/sounds/jackpot.mp3")
-: new Audio("/sounds/win.mp3");
+? new Audio(`${import.meta.env.BASE_URL}sounds/jackpot.mp3`)
+: new Audio(`${import.meta.env.BASE_URL}sounds/win.mp3`);
  
 sound.play();
 }
